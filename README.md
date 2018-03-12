@@ -23,11 +23,14 @@ Drivers can even be switched on the fly. Currently we have only one, but imagine
 
 ```js
 const fs = new Filesystem(new Driver.Local())
+// Fictitious Memory driver
+const memory = new Transport.Memory()
 
+// Using the Local driver.
 const exists = await fs.exists('file.txt')
 if (!exists) {
-  // Fictitious Memory driver/
-  await fs.in(new Transport.Memory()).write('file.txt', 'Hello from Memory')
+  // Switching to the Memory driver.
+  await fs.in(memory).write('file.txt', 'Hello from Memory')
 }
 
 // Now we're back to the Local driver.
