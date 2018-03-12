@@ -1,0 +1,33 @@
+{
+  "name": "@sapphirejs/filesystem",
+  "version": "0.1.0",
+  "description": "Abstract Filesystem",
+  "license": "MIT",
+  "author": "Fadion Dashi <jonidashi@gmail.com>",
+  "keywords": [
+    "filesystem",
+    "abstract",
+    "drivers",
+    "local",
+    "sapphire",
+    "framework"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./src",
+    "test-ci": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.18.2",
+    "jest": "^22.0.4"
+  }
+}

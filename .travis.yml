@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - '8'
+  - '9'
+cache: yarn
+script:
+  - yarn test
+  - yarn lint
+  - yarn test-ci
+sudo: falselanguage: node_js
+node_js:
+  - '8'
+  - '9'
+cache: yarn
+script:
+  - yarn test
+  - yarn lint
+  - yarn test-ci
+sudo: false
