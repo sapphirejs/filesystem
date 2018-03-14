@@ -39,31 +39,44 @@ await fs.createDir('some/dir')
 
 ## API
 
-**read(path) : string** - Read the contents of the file in `path`.
+**read(path) : string**  
+Read the contents of the file in `path`.
 
-**write(path, data)** - Write `data` to the file in `path`.
+**write(path, data)**  
+Write `data` to the file in `path`.
 
-**exists(path) : boolean** - Check if file in `path` exists.
+**exists(path) : boolean**  
+Check if file in `path` exists.
 
-**isDirectory(path) : boolean** - Check if `path` is a directory.
+**isDirectory(path) : boolean**  
+Check if `path` is a directory.
 
-**isFile(path) : boolean** - Check if `path` is a file.
+**isFile(path) : boolean**  
+Check if `path` is a file.
 
-**isSymbolicLink(path) : boolean** - Check if `path` is a symbolic link.
+**isSymbolicLink(path) : boolean**  
+Check if `path` is a symbolic link.
 
-**delete(path)** - Delete `path`. Supports both files and directories.
+**delete(path)**  
+Delete `path`. Supports both files and directories.
 
-**append(path, data)** - Append `data` to the file in `path`.
+**append(path, data)**  
+Append `data` to the file in `path`.
 
-**chmod(path, mode)** - Set `mode` (octal, ie: 0o755) permissions to the file in `path`.
+**chmod(path, mode)**  
+Set `mode` (octal, ie: 0o755) permissions to the file in `path`.
 
-**copy(source, destination, overwrite = true)** - Copy file `source` into `destination`.
+**copy(source, destination, overwrite = true)**  
+Copy file `source` into `destination`.
 
-**createDir(path, mode = 0o777)** - Create a directory in `path` with `mode` permissions.
+**createDir(path, mode = 0o777)**  
+Create a directory in `path` with `mode` permissions.
 
-**readDir(path) : array** - Read non-recursively files and directories in directory `path`.
+**readDir(path) : array**  
+Read non-recursively files and directories in directory `path`.
 
-**rename(oldPath, newPath) : array** - Rename file in `oldPath` to `newPath` if it doesn't exist.
+**rename(oldPath, newPath) : array**  
+Rename file in `oldPath` to `newPath` if it doesn't exist.
 
 ## Drivers
 
