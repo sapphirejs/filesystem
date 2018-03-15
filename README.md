@@ -60,6 +60,9 @@ Check if `path` is a symbolic link.
 **delete(path)**
 Delete `path`. Supports both files and directories.
 
+**deleteAll(path)**
+Delete directory in `path` recursively, deleting every file and subdirectory. Be cautious when using it, especially with dynamic parameters, as it will wipe out entire directories.
+
 **append(path, data)**
 Append `data` to the file in `path`.
 
