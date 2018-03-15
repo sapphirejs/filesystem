@@ -39,43 +39,43 @@ await fs.createDir('some/dir')
 
 ## API
 
-**read(path) : string**  
+**read(path) : string**
 Read the contents of the file in `path`.
 
-**write(path, data)**  
+**write(path, data)**
 Write `data` to the file in `path`.
 
-**exists(path) : boolean**  
+**exists(path) : boolean**
 Check if file in `path` exists.
 
-**isDirectory(path) : boolean**  
+**isDirectory(path) : boolean**
 Check if `path` is a directory.
 
-**isFile(path) : boolean**  
+**isFile(path) : boolean**
 Check if `path` is a file.
 
-**isSymbolicLink(path) : boolean**  
+**isSymbolicLink(path) : boolean**
 Check if `path` is a symbolic link.
 
-**delete(path)**  
+**delete(path)**
 Delete `path`. Supports both files and directories.
 
-**append(path, data)**  
+**append(path, data)**
 Append `data` to the file in `path`.
 
-**chmod(path, mode)**  
+**chmod(path, mode)**
 Set `mode` (octal, ie: 0o755) permissions to the file in `path`.
 
-**copy(source, destination, overwrite = true)**  
+**copy(source, destination, overwrite = true)**
 Copy file `source` into `destination`.
 
-**createDir(path, mode = 0o777)**  
-Create a directory in `path` with `mode` permissions.
+**createDir(path, mode = 0o777, recursively = false)**
+Create a directory in `path` with `mode` permissions. If `recursively` is set to `true`, it will try to create parent directories too, similar to `mkdir -p`.
 
-**readDir(path) : array**  
+**readDir(path) : array**
 Read non-recursively files and directories in directory `path`.
 
-**rename(oldPath, newPath) : array**  
+**rename(oldPath, newPath) : array**
 Rename file in `oldPath` to `newPath` if it doesn't exist.
 
 ## Drivers
