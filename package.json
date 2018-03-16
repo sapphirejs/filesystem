@@ -1,6 +1,6 @@
 {
   "name": "@sapphirejs/filesystem",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Abstract Filesystem",
   "license": "MIT",
   "author": "Fadion Dashi <jonidashi@gmail.com>",
